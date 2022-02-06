@@ -1,0 +1,39 @@
+.accordion-button:not(.collapsed) {
+    color: #DDDD33 !important;
+    background-color: #25753A;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.fondo {
+    background-color: #30c457 !important;
+    color: #ffff00!important;
+}
+.fondo1 {
+    background-color: #13d46a !important;
+    color: #fdfd09!important;
+}
+.fondo2 {
+    background-color: #40b35f !important;
+    color: #ffff00!important;
+    
+}
+.fondo3 {
+    background-color: #0caf35 !important;
+    color: #f8f806!important;
+}
+.fondo4 {
+    background-color: #53c972 !important;
+    color: #f3f310!important;
+}
+.fondo5 {
+    background-color: #3cc05f !important;
+    color: #f5f507!important;
+}
+.fondo6 {
+    background-color: #6ef091 !important;
+    color: #f5f50a!important;
+}

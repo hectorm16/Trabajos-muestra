@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pirate Food</title>
+    <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/estilo.css">
+	  <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index2.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+     <!-- CSS only -->
+     <script>var __adobewebfontsappname__="dreamweaver"</script>
+     <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+	 <script src="https://kit.fontawesome.com/d65912d659.js" crossorigin="anonymous"></script>
+     
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+ <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fondoNavar">
+		<div class="container-fluid">
+       <a class="navbar-brand" href="">
+       <img src="images/logo1.png" alt="" width="20%" >
+       </a> 
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto lead ">
+            <li class="nav-item active">
+              <a class="nav-link fs-5" href="#" onclick="regionVisibleLandy()">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link fs-5" href="#" onclick="regionVisibleContactos()" >contacto <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Lista de Productos</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item fs-6" href="#" onclick="regionVisibleListProductos()">Combos Personales</a>
+                <a class="dropdown-item fs-6" href="#" onclick="regionVisibleListCombos()">Combos para compartir</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"></a>
+              </div>
+            </li>
+			  <li class="nav-item active">
+              <a class="nav-link fs-5" href="#" onclick="regionVisiblePreguntas()">Preguntas</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link fs-5" href="#" onclick="regionVisibleCarrito()"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+          
+        </div>
+  </div>
+    </nav>
+  <div id="landy" class="landy">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+              <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/banner1.png" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/marisco.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/carousel 3.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+   
+    <hr>
+    <h2 class="text-center">Combos Personales</h2>
+    <hr>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="./images/1.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Cacerrola de langostinos a la mantequilla</h5>
+              <p class="card-text">Langostinos hervidos en agua condimentada sasonas y bañados en mantequilla con esparragos al vapor con arroma a oregano.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="./images/2.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Lasaña rrelleno de camarón</h5>
+              <p class="card-text">Lazaña rellena de camarones preparados y azados en orno con verduras acompaña de una salsa verde y aguacate con huevo</p>       
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="./images/3.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Berengena y lancilla</h5>
+              <p class="card-text">Berengenas defloradas al vapor pasas por aceite vegetal y envueltas en lancillas tiernas fermentadas con hiervas.</p>    
+            </div>
+          </div>
+        </div>
+      </div>
+        <hr>
+    <h2 class="text-center">Combos Para Compartir</h2>
+    <hr>
+      <div class="row text-center mt-4">
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="./images/4.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Ceviche a la plancha</h5>
+              <p class="card-text">Plato de verduras para preparar a la plancha junto con ceviche cortados finamente.</p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="./images/5.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Sushi de tres pescados</h5>
+              <p class="card-text">Sushi elaborado de tres pescados y bañados en tres salsas diferentes.</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="./images/6.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Combo sushi y kimpap</h5>
+              <p class="card-text">Sushi y kimpap de pesacado elavorado con diferentes verduras acompañado con de salsa tradicionar .</p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--Preguntas-->
+
+  <div id="preguntas" class="preguntas mb-5 mt-5" style="display: none;"> <!--agregar adentro de este div-->
+    <div class="container mt-5">
+      <h3 class="mt-5 mb-5" align="center"> PREGUNTAS FRECUENTES <img src="images/logo restaurante.png" alt="/logo restaurante.png" width="30%" height="30%"></h3>
+      <div class="accordion" id="accordionExample">
+          <div class="accordion-item colorbarra">
+            <h2 class="accordion-header colorbarra" id="headingOne">
+              <button class="accordion-button fondo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ¿Quienes somos?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong> Pirate Food es una empresa que nace con la colaboracion de 4 estudiantes en Diseño Web Responsivo, los cuales no cuentan con una tienda en fisico, por lo que deciden abrir una tienda online (crear una pagina web)para dar a conocer sus productos que formaran parte del paladar hondureño en un futuro cercano
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed fondo1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿Como se que mi pedido llegara a mi direccion exacta?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Pirate Food a traves de sus empleados trabaja a domicilio,  a lo cual usted realiza su pedido en nuestra pagina web: inmediatamente al seleccionar el pedido se le pide su numero de telefono para mas precision.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed fondo2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Cuales son las formas de pago?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>El hecho que seamos una tienda Online, no quiere decir que con solo tarjetas de credito o de debito usted podra pagar su producto, Pirate Food tiene opciones de pago ya sea en tarjeta o en efectivo, todo siempre de acuerdo con su ubicacion para tener la mejor seguridad en nuestros clientes como en nuestros empleados.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed fondo3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿De que forma obtengo mi factura por el servicio adquirido?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong> Nuestros repartidores llevan un dispositivo que le hara llegar su factura a la puerta de su casa en ese preciso instante, y tambien a traves de un mensaje de texto enviado al numero que usted proporciono.
+                </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed fondo4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Existen chats para hacer mis pedidos via WhatsApp?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Claro que si. Nosotros tenemos un chat que ñe atendera gustosamente las 24 horas del dia y el numero de nuestro restaurante esta descrito en nuestra pagina web y tambien cualquiera de nosotros se lo puede proporcionar sin  ningun problema.
+                </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed fondo5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Cuales son las formas de pago?
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>El hecho que seamos una tienda Online, no quiere decir que con solo tarjetas de credito o de debito usted podra pagar su producto, Pirate Food tiene opciones de pago ya sea en tarjeta o en efectivo, todo siempre de acuerdo con su ubicacion para tener la mejor seguridad en nuestros clientes como en nuestros empleados.
+                </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed fondo6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
+                      ¿Necesito registrarme para adquirir pedidos?
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>No necesariamente tiene que registrarse, pero le recomendamos realizar esta accion, ya que Pirate Food premia la fidelidad de nuestros clientes a traves de las bases de datos que manejan nuestros servidores.
+                  </div>
+                </div>
+          </div>
+  
+    </div>
+
+    
+
+    </div>
+  </div>
+
+  <!--Productos-->
+
+  <div id="listaProductos" class="listaProductos mt-5 mb-5" style="display: none;">
+    <div class="container">
+      <div id="producto1" class="listaProducto">
+          <h2 class="mt-3">Productos</h2>
+             <div id="listaProducto" class="row mt-5">
+             </div>
+          </div>
+  
+     </div>
+
+  </div>
+
+  <!--Combos-->
+  <div id="listaCombos" class="listaCombos mt-5 mb-5" style="display: none;">
+    <div class="container">
+      <div id="combos1" class="listaProducto">
+          <h2 class="mt-3">Combos Para compartir</h2>
+             <div id="listaCombo" class="row mt-5">
+             </div>
+          </div>
+  
+     </div>
+  </div>
+
+<!--modalPedido-->    
+<div id="idModalPedido" class=" modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div  class="modal-header barraModal">
+                <h5 class="modal-title "><b>Añada su Platillo al carrito</b></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div  id="cuerpoModal" class="modal-body">
+               
+              </div>
+            </div>
+          </div>
+</div>
+   
+<!--contactos-->
+<div id="contactos" class="contactos" style="display: none;"> <!--remplasar contenido dentro de este div-->
+  <div class="containerp"> <!--aqui-->
+	  <form action="">
+            <h3>CONTACTO</h3>
+            <input type="text" name="Nombre completo" placeholder=" Nombre Completo">
+            <input type="text" name="Correo electronico" placeholder=" usuario@example">
+            <input type="text" name="Telefono" placeholder=" Telefono">
+            <textarea name=" Mensaje" placeholder=" Escriba aqui su mensaje"></textarea>
+            <input type="button" value=" Enviar" id="boton">
+        </form>
+
+  </div>  
+</div>
+
+<!--Carrito-->
+<div id="cuerpoCarrito" style="display: none;">
+  <div class="row mt-5 mb-5">
+    <div class="col-12 d-flex justify-content-center ">
+     
+      <img src="./images/logo restaurante.png" alt="" class="img-fluid mr-2" width="100px"> <br>
+      <h2 class=""> Lista de Productos en el carrito de compras</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row barraTitulo">
+<div class="col-3 mr-2 ">
+  Producto
+  </div>
+  <div class="col-2 barraModa  text-right">
+  precio
+  </div>
+  <div class="col-2 barraModa  text-right">
+  cant
+  </div>
+  <div class="col-3 barraModa  text-right">
+  subTotal
+  </div>
+ 
+</div>
+
+      </div>
+ <div id="descripcioncarrito" class="container">
+  
+  
+  </div>
+</div>
+
+<!--modalDecompra-->
+<div id="modalCompra"  class="modal " tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header barraModal">
+        <h5 class="modal-title">Ingrese datos para la compra</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row mb-3">
+          <div class="col-12">
+            Dirección de envío: <input type="text" class="form-control">
+            Numero de telefono: <input type="text" class="form-control">
+            </div>
+          </div>
+          </div>
+          <div class="text-center"> <hr> <i class="fab fs-2 fa-cc-amex "></i> <i class="fab fs-2 fa-cc-mastercard mr-2"></i><i class="fab fs-2 fa-cc-visa"></i></div>
+          <hr>
+      <div class="row">
+        <div class="col-6">
+          Nombre: <input type="text" class="form-control">
+          Expira: <input type="date" class="form-control">
+          </div>
+          <div class="col-6">
+           Apellido: <input type="text" class="form-control">
+           codigo targeta: <input type="text" class="form-control">
+            </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+       </i> <button type="button" class="btn barraModal" onclick="abrirModalExito()">comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--modalCompraExitosa-->
+<div id="modalExito" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header barraModal">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container  ">
+           <div class="row d-flex">
+            <div class="col-12 mt-5 ">
+              <img class="img-fluid" style="margin-left: 85px;" src="./images/logo restaurante.png" alt="" width="210px" height="210px">
+              </div>
+            </div> <br>
+          <div class="row align-items: center; ">
+            <div class="col-12  ">
+              <p class="fs-5" style="text-align: justify;">Gracias por comprar en pirate food en breve recibira su comida en la puerta de su casa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn barraModal" onclick="cerrarModalG()">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--footer-->
+    <div class=" text-white fondoNavar p-4 mt-5"> 
+    <footer class="text-center">
+		
+      <div class="container">
+		  
+        <div class="row">
+          <div class="col-12">
+            <p class="fondoNavar text-white">Pirates Food.hn - Derechos Reservados - 2021 </p>
+            <p class="fs-4"><i class="fab fa-twitter-square"></i> <i class="fab fa-facebook-square"></i> <i class="fab fa-telegram"></i></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/fb99deb1b2.js" crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="js/controlador.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
